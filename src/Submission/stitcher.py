@@ -6,7 +6,7 @@ import os
 class PanaromaStitcher:
     def __init__(self):
         self.matcher = cv2.BFMatcher_create(cv2.NORM_L2, crossCheck=False)
-        self.sift = cv2.SIFT_create(nfeatures=5000)
+        self.sift = cv2.SIFT_create(nfeatures=2000)
 
     def cylindrical_warp(self, img, f):
         """Apply cylindrical warp to image"""
